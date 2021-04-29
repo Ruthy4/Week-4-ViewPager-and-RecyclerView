@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:id="@+id/scroll_view"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/parentBackground"
+    android:layout_height="match_parent">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ui.ProductsFragment">
+
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+       style="@style/viewPagerLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+    </androidx.viewpager2.widget.ViewPager2>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/slider_dots"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/parentBackground"
+        app:tabIndicatorHeight="0dp"
+        app:tabBackground="@drawable/indicator"
+        app:tabGravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_pager" />
+
+
+    <LinearLayout
+        android:id="@+id/card_item_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="98dp"
+        android:layout_gravity="center"
+        android:background="@color/parentBackground"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/slider_dots"
+        tools:layout_editor_absoluteX="0dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/transfer_card_view"
+            android:layout_width="70dp"
+            style="@style/cardViewStyle"
+            android:layout_weight="1"
+            android:backgroundTint="@color/white"
+            app:cardCornerRadius="8dp">
+
+            <LinearLayout
+                android:id="@+id/transfer_linear_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/transfer_image_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_rectangle" />
+
+                <TextView
+                    android:id="@+id/transfer_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="@font/montserrat"
+                    android:textColor="@color/textColor"
+                    android:text="@string/transfer" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/mobile_card_view"
+            android:layout_width="70dp"
+            style="@style/cardViewStyle2"
+            android:layout_weight="1"
+            android:backgroundTint="@color/white"
+            app:cardCornerRadius="8dp">
+
+            <LinearLayout
+                android:id="@+id/mobile_linear_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/mobile_image_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_smartphone" />
+
+                <TextView
+                    android:id="@+id/mobile_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="@font/montserrat"
+                    android:textColor="@color/textColor"
+                    android:text="@string/mobile" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/utilities_card_view"
+            android:layout_width="70dp"
+            style="@style/cardViewStyle2"
+            android:layout_weight="1"
+            android:backgroundTint="@color/white"
+            app:cardCornerRadius="8dp">
+
+            <LinearLayout
+                android:id="@+id/utilities_linear_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/utilities_image_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_home" />
+
+                <TextView
+                    android:id="@+id/utilities_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="@font/montserrat"
+                    android:textColor="@color/textColor"
+                    android:text="@string/utilities" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/QR_card_card_view"
+            android:layout_width="70dp"
+           style="@style/cardViewStyle2"
+            android:layout_weight="1"
+            android:backgroundTint="@color/white"
+            app:cardCornerRadius="8dp">
+
+            <LinearLayout
+                android:id="@+id/QR_card_linear_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/QR_card_image_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_qr_code" />
+
+                <TextView
+                    android:id="@+id/QR_card_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="@font/montserrat"
+                    android:textColor="@color/textColor"
+                    android:text="QR Code" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linear_layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/card_item_linear_layout">
+
+
+        <TextView
+            android:id="@+id/special_offer_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/special_offer_text_view"
+            android:fontFamily="@font/montserrat"
+            android:textColor="@color/textColor2"
+            android:text="@string/special_offer"
+            />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cash_loan_card_view"
+            android:layout_height="wrap_content"
+            style="@style/credit_card_view1"
+            android:backgroundTint="@color/debitCardColor"
+            app:cardCornerRadius="8dp">
+
+            <LinearLayout
+                android:id="@+id/cash_loan_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               style="@style/credit_card">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/cash_loan_ll">
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:fontFamily="@font/montserrat"
+                    android:layout_weight="1"
+                    style="@style/credit_card_textView"
+                    android:text="@string/cash_loan"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/amount"
+                    android:textColor="@color/white"
+                    style="@style/amount_text_view" />
+            </LinearLayout>
+
+                <TextView
+                    android:id="@+id/dollar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dollar"
+                    style="@style/dollar_text_view"
+                    android:textColor="@color/white"
+                    android:background="@drawable/ic_dollar_background" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_height="wrap_content"
+       style="@style/credit_card_view"
+        android:backgroundTint="@color/debitCardColor"
+        app:cardCornerRadius="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/credit_card">
+
+        <LinearLayout
+            android:id="@+id/credit_card_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           style="@style/credit_card_ll">
+
+            <TextView
+                android:id="@+id/credit_card_textView"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                style="@style/credit_card_textView"
+                android:text="@string/credit_card"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/amount_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/amount_text_view"
+                android:text="@string/amount"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_credit_card"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
+
+        <TextView
+            android:id="@+id/special_offer_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           style="@style/partners_style"
+            android:text="@string/partners_text"
+            android:textColor="@color/textColor2" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/recyclerStyle">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

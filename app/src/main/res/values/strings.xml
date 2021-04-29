@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">WeekFourUI</string>
+    <string name="title_products">Products</string>
+    <string name="title_payments">Payments</string>
+    <string name="title_history">history</string>
+    <string name="title_support">support</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Support</string>
+    <string name="products">Products</string>
+    <string name="ola_machiavelli">Ola Machiavelli</string>
+    <string name="channel_name">Channel</string>
+    <string name="channel_description">Description</string>
+    <string name="amount">$ 234,810</string>
+    <string name="partner_name">AliExpress</string>
+    <string name="percent_text_view">From 4%</string>
+    <string name="shop_items">Clothes and shoes</string>
+    <string name="debit_card_name">Unoka Ruth</string>
+    <string name="amount_text_view">30,000,000.00</string>
+    <string name="card_type_text_view">VISA</string>
+    <string name="card_pin">4321</string>
+    <string name="debit_card">Debit Card</string>
+    <string name="partners_text">Partners</string>
+    <string name="special_offer">Special Offer</string>
+    <string name="utilities">Utilities</string>
+    <string name="mobile">Mobile</string>
+    <string name="transfer">Transfer</string>
+    <string name="cash_loan">Cash loan</string>
+    <string name="credit_card">Credit card</string>
+    <string name="more">more</string>
+    <string name="dollar">$</string>
+    <string name="support">Support</string>
+</resources>
